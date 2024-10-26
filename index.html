@@ -13,7 +13,7 @@
             background-color: #f4f4f9;
         }
         header {
-            background-color: #5d5fef;
+            background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -31,21 +31,23 @@
             margin: 0 auto;
         }
         .section-title {
-            color: #5d5fef;
+            color: #333;
             font-size: 1.5em;
             margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
         p {
             line-height: 1.6;
             margin-bottom: 20px;
         }
-        .technologies {
+        .technologies, .services {
             margin: 20px 0;
             padding: 20px;
-            background-color: #e6e6fa;
+            background-color: #e6e6e6;
             border-radius: 8px;
         }
-        .technologies h3 {
+        .technologies h3, .services h3 {
             margin-top: 0;
             font-size: 1.2em;
             color: #333;
@@ -66,6 +68,10 @@
             padding: 20px;
             font-size: 0.9em;
         }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -78,6 +84,19 @@
     <h2 class="section-title">About Us</h2>
     <p>With over a decade of experience in software development, we are a team of skilled engineers specializing in building robust, scalable applications tailored to meet your business objectives. We also offer expert consulting in areas like architectural design, application scaling, and cost optimization.</p>
     <p>Our team is well-versed across various technologies, allowing us to deliver high-quality solutions tailored to your requirements.</p>
+
+    <h2 class="section-title">Services Provided</h2>
+    <div class="services">
+        <ul>
+            <li>Website Optimization</li>
+            <li>Query/DB Optimization</li>
+            <li>Architectural Consultation</li>
+            <li>Java Full Stack Apps</li>
+            <li>Application/Website Scale Consultation</li>
+            <li>Cost Optimization</li>
+            <li>Inventory Scaling Solutions</li>
+        </ul>
+    </div>
 
     <h2 class="section-title">Technologies We Use</h2>
     <div class="technologies">
@@ -117,7 +136,8 @@
 </div>
 
 <footer>
-    <p>Email: <a href="mailto:aptscalesol@gmail.com" style="color: #fff; text-decoration: underline;">aptscalesol@gmail.com</a></p>
+    <p>Email: <a href="mailto:aptscalesol@gmail.com">aptscalesol@gmail.com</a></p>
+    <p>&copy; 2024 AptScale Solutions | All Rights Reserved</p>
 </footer>
 </body>
 </html>
