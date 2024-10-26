@@ -53,13 +53,21 @@
             color: #333;
         }
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
         li {
             margin-bottom: 8px;
             font-size: 1em;
             color: #555;
+            display: flex;
+            align-items: center;
+        }
+        li::before {
+            content: "•";
+            font-size: 1.2em;
+            color: #333;
+            margin-right: 10px;
         }
         footer {
             background-color: #333;
@@ -88,14 +96,12 @@
     <h2 class="section-title">Services Provided</h2>
     <div class="services">
         <ul>
-            <li>Application/Website Scale Consultation</li>
-            <li>Architectural Consultation</li>
-            <li>Integrating 3rd Party Applications</li>
-            <li>Mobile Application Development (Android/Auto)</li>
-            <li>Java Full Stack Apps</li>
-            <li>Cost Optimization</li>
             <li>Website Optimization</li>
             <li>Query/DB Optimization</li>
+            <li>Architectural Consultation</li>
+            <li>Java Full Stack Apps</li>
+            <li>Application/Website Scale Consultation</li>
+            <li>Cost Optimization</li>
             <li>Inventory Scaling Solutions</li>
         </ul>
     </div>
@@ -130,7 +136,7 @@
 
         <h3>Containers & Cloud</h3>
         <ul>
-            <li>Cloud(AWS/AZURE/GCP)</li>
+            <li>Cloud</li>
             <li>Docker</li>
             <li>Kubernetes</li>
         </ul>
